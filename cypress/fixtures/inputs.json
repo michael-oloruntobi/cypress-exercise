@@ -1,0 +1,8 @@
+{
+  "searchTerms": ["Vitt", "Alex"],
+  "country": "France",
+  "currency": "USD",
+  "employeeType": "employee",
+  "newMemberSuccessNotification": "You’ve successfully added a member.",
+  "editMemberSuccessNotification": "You’ve successfully edited a member."
+}

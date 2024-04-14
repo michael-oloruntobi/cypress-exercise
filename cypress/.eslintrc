@@ -1,0 +1,29 @@
+{
+  "extends": ["react-app", "react-app/jest", "plugin:jsx-a11y/recommended"],
+  "plugins": ["jsx-a11y", "cypress"],
+  "overrides": [
+    {
+      "files": ["cypress/**/*.js"],
+      "env": {
+        "cypress/globals": true
+      }
+    }
+  ],
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "^(useTable)$"
+      }
+    ]
+  }
+}
